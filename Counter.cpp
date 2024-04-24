@@ -52,7 +52,7 @@ public:
     }
 
     // постфиксный инкремент
-    Counter& operator++(int)
+    Counter operator++(int)
     {
         int value = count;
         value < max ? count++ : count = min;
